@@ -1,25 +1,21 @@
-import { Text, View } from 'react-native';
+import { Pressable, Text, View } from 'react-native';
+import MenuTop from './MenuTop';
+import PerifericButton from './PerifericButtons';
+import MasterButton from './MasterButton';
+import ButtonPower from './ButtonPower';
 
-import { EditScreenInfo } from './EditScreenInfo';
-
-type ScreenContentProps = {
-  title: string;
-  path: string;
-  children?: React.ReactNode;
-};
-
-export const ScreenContent = ({ title, path, children }: ScreenContentProps) => {
+export const ScreenContent = () => {
   return (
-    <View className={styles.container}>
-      <Text className={styles.title}>{title}</Text>
-      <View className={styles.separator} />
-      <EditScreenInfo path={path} />
-      {children}
+    <View className="flex-1 w-100 h-100 flex-col items-center items-center justify-center justify-center bg-black">
+      <MenuTop />
+      <ButtonPower />
+      <MasterButton />
+      <PerifericButton />
+      {/* <Pressable
+          className="mx-2 h-14 w-14 items-center justify-center rounded-full bg-gray-200 shadow"
+          onPress={() => onPress('up')}>
+          <Text className="text-2xl text-gray-700">▲</Text>
+        </Pressable> */}
     </View>
   );
-};
-const styles = {
-  container: `items-center flex-1 justify-center`,
-  separator: `h-[1px] my-7 w-4/5 bg-gray-200`,
-  title: `text-xl font-bold`,
 };
