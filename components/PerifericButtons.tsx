@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Pressable, StyleSheet } from 'react-native';
+import { View, Pressable } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 import { LinearGradient } from 'expo-linear-gradient';
 
@@ -20,25 +20,12 @@ export default function PerifericButton() {
   }
 
   return (
-    <View
-      style={{
-        width: '100%',
-        flexDirection: 'row',
-        marginTop: 40,
-      }}>
-      <View
-        style={{
-          width: '50%',
-        }}>
-        <View style={styles.left}>
+    <View className="w-full flex-row mt-10">
+      <View className="w-1/2">
+        <View className="self-end">
           <Pressable
-            style={[
-              {
-                backgroundColor: '#1C1C1D',
-                borderColor: '#232323',
-              },
-              styles.perifericButton,
-            ]}>
+            className="m-[5px] h-[100px] w-[100px] items-center justify-center rounded-full border-t-[3px] bg-[#1C1C1D]"
+            style={{ borderColor: '#232323', borderLeftWidth: 0.5, borderRightWidth: 0.5 }}>
             <Svg width="17" height="28" viewBox="0 0 17 28" fill="none">
               <Path
                 d="M0.5 13.6774C0.5 14.315 0.742884 14.8615 1.25901 15.3624L12.9023 26.7476C13.3121 27.1575 13.7979 27.3548 14.3748 27.3548C15.5588 27.3548 16.5 26.4137 16.5 25.2448C16.5 24.6528 16.2571 24.1214 15.8321 23.7116L5.52467 13.6622L15.8321 3.64326C16.2723 3.21822 16.5 2.68691 16.5 2.11006C16.5 0.941176 15.5588 0 14.3748 0C13.7979 0 13.3121 0.197343 12.9023 0.607211L1.25901 11.9924C0.742884 12.4934 0.51518 13.0247 0.5 13.6774Z"
@@ -47,15 +34,10 @@ export default function PerifericButton() {
             </Svg>
           </Pressable>
         </View>
-        <View style={styles.left}>
+        <View className="self-end">
           <Pressable
-            style={[
-              {
-                backgroundColor: '#232323',
-                borderColor: '#1C1C1D',
-              },
-              styles.perifericButton,
-            ]}>
+            className="m-[5px] h-[100px] w-[100px] items-center justify-center rounded-full border-t-[3px] bg-[#232323]"
+            style={{ borderColor: '#1C1C1D', borderLeftWidth: 0.5, borderRightWidth: 0.5 }}>
             <Svg width="33" height="28" viewBox="0 0 33 28" fill="none">
               <Path
                 d="M4.13129 22.5209H28.8563C31.2235 22.5209 32.5 21.2311 32.5 18.7287V3.77928C32.5 1.28986 31.2235 0 28.8563 0H4.13129C1.76414 0 0.5 1.28986 0.5 3.77928V18.7287C0.5 21.2311 1.76414 22.5209 4.13129 22.5209ZM4.37916 19.6832C3.58598 19.6832 3.22657 19.3479 3.22657 18.4837V4.02436C3.22657 3.17305 3.58598 2.83769 4.37916 2.83769H28.6208C29.414 2.83769 29.7734 3.17305 29.7734 4.02436V18.4837C29.7734 19.3479 29.414 19.6832 28.6208 19.6832H4.37916ZM10.0678 27.1515H22.9198C23.6139 27.1515 24.1592 26.5582 24.1592 25.8746C24.1592 25.178 23.6139 24.5847 22.9198 24.5847H10.0678C9.38614 24.5847 8.84082 25.178 8.84082 25.8746C8.84082 26.5582 9.38614 27.1515 10.0678 27.1515Z"
@@ -64,15 +46,10 @@ export default function PerifericButton() {
             </Svg>
           </Pressable>
         </View>
-        <View style={styles.left}>
+        <View className="self-end">
           <Pressable
-            style={[
-              {
-                backgroundColor: '#1C1C1D',
-                borderColor: '#232323',
-              },
-              styles.perifericButton,
-            ]}>
+            className="m-[5px] h-[100px] w-[100px] items-center justify-center rounded-full border-t-[3px] bg-[#1C1C1D]"
+            style={{ borderColor: '#232323', borderLeftWidth: 0.5, borderRightWidth: 0.5 }}>
             <Svg width="33" height="32" fill="none" viewBox="0 0 33 32">
               <Path
                 fill="#fff"
@@ -82,19 +59,11 @@ export default function PerifericButton() {
           </Pressable>
         </View>
       </View>
-      <View
-        style={{
-          width: '50%',
-        }}>
+      <View className="w-1/2">
         <View>
           <Pressable
-            style={[
-              {
-                backgroundColor: '#1C1C1D',
-                borderColor: '#232323',
-              },
-              styles.perifericButton,
-            ]}>
+            className="m-[5px] h-[100px] w-[100px] items-center justify-center rounded-full border-t-[3px] bg-[#1C1C1D]"
+            style={{ borderColor: '#232323', borderLeftWidth: 0.5, borderRightWidth: 0.5 }}>
             <Svg width="33" height="28" viewBox="0 0 33 28" fill="none">
               <Path
                 d="M4.13129 22.5209H28.8563C31.2235 22.5209 32.5 21.2311 32.5 18.7287V3.77928C32.5 1.28986 31.2235 0 28.8563 0H4.13129C1.76414 0 0.5 1.28986 0.5 3.77928V18.7287C0.5 21.2311 1.76414 22.5209 4.13129 22.5209ZM4.37916 19.6832C3.58598 19.6832 3.22657 19.3479 3.22657 18.4837V4.02436C3.22657 3.17305 3.58598 2.83769 4.37916 2.83769H28.6208C29.414 2.83769 29.7734 3.17305 29.7734 4.02436V18.4837C29.7734 19.3479 29.414 19.6832 28.6208 19.6832H4.37916ZM10.0678 27.1515H22.9198C23.6139 27.1515 24.1592 26.5582 24.1592 25.8746C24.1592 25.178 23.6139 24.5847 22.9198 24.5847H10.0678C9.38614 24.5847 8.84082 25.178 8.84082 25.8746C8.84082 26.5582 9.38614 27.1515 10.0678 27.1515Z"
@@ -105,9 +74,13 @@ export default function PerifericButton() {
         </View>
 
         <View
+          className="m-[5px] h-[210px] w-[100px] overflow-hidden rounded-full bg-[#1C1C1D] items-center justify-around border-t-[3px]"
           style={[
-            styles.perifericButtonAddDec,
-
+            {
+              borderLeftWidth: 0.5,
+              borderRightWidth: 0.5,
+              borderColor: 'rgba(120, 120, 121, 0.38)',
+            },
             dualButton.currentButton === 'up' && {
               borderTopWidth: 0,
               borderLeftWidth: 2,
@@ -120,7 +93,8 @@ export default function PerifericButton() {
               borderRightWidth: 1,
               borderBottomWidth: 0,
             },
-          ]}>
+          ]}
+        >
           <LinearGradient
             colors={
               dualButton.pressed
@@ -133,7 +107,7 @@ export default function PerifericButton() {
               ref={add}
               onPressIn={(e) => handleTouchIn(e)}
               onPressOut={(e) => handleTouchOut(e)}
-              style={{ width: 100, height: 105, alignItems: 'center', justifyContent: 'center' }}>
+              className="h-[105px] w-[100px] items-center justify-center">
               <Svg width="29" height="29" viewBox="0 0 29 29" fill="none">
                 <Path
                   d="M2.69575 16.6645H12.3042V26.273C12.3042 27.4782 13.2948 28.4688 14.5 28.4688C15.7052 28.4688 16.6958 27.4782 16.6958 26.273V16.6645H26.3042C27.5094 16.6645 28.5 15.6904 28.5 14.4688C28.5 13.2636 27.5094 12.273 26.3042 12.273H16.6958V2.6645C16.6958 1.45932 15.7052 0.46875 14.5 0.46875C13.2948 0.46875 12.3042 1.45932 12.3042 2.6645V12.273H2.69575C1.49057 12.273 0.5 13.2636 0.5 14.4688C0.5 15.6904 1.49057 16.6645 2.69575 16.6645Z"
@@ -145,7 +119,7 @@ export default function PerifericButton() {
               ref={dec}
               onPressIn={(e) => handleTouchIn(e)}
               onPressOut={(e) => handleTouchOut(e)}
-              style={{ width: 100, height: 105, alignItems: 'center', justifyContent: 'center' }}>
+              className="h-[105px] w-[100px] items-center justify-center">
               <Svg width="29" height="6" viewBox="0 0 29 6" fill="none">
                 <Path
                   d="M2.66657 5.05554H26.3334C27.4911 5.05554 28.5 4.06322 28.5 2.8559C28.5 1.66511 27.4911 0.65625 26.3334 0.65625H2.66657C1.54194 0.65625 0.5 1.66511 0.5 2.8559C0.5 4.06322 1.54194 5.05554 2.66657 5.05554Z"
@@ -159,35 +133,3 @@ export default function PerifericButton() {
     </View>
   );
 }
-const styles = StyleSheet.create({
-  perifericButton: {
-    width: 100,
-    height: 100,
-    margin: 5,
-    borderTopWidth: 3,
-    borderLeftWidth: 0.5,
-    borderRightWidth: 0.5,
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: 100,
-  },
-  left: {
-    alignSelf: 'flex-end',
-  },
-  perifericButtonAddDec: {
-    width: 100,
-    height: 210,
-    margin: 5,
-    overflow: 'hidden',
-    backgroundColor: '#1C1C1D',
-    borderRadius: 100,
-    borderTopWidth: 3,
-    borderLeftWidth: 0.5,
-    borderRightWidth: 0.5,
-    borderColor: 'rgba(120, 120, 121, 0.38)',
-    display: 'flex',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-  },
-});
