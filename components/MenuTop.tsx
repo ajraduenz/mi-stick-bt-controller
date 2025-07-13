@@ -3,8 +3,8 @@ import { Text, View, StyleSheet } from 'react-native';
 export default function MenuTop() {
   return (
     <View style={styles.containerIntro}>
-      <Text style={styles.title}>Menu</Text>
-      <View style={styles.arrow} />
+      {/* <Text style={styles.title}>Menu</Text>
+      <View style={styles.arrow} /> */}
     </View>
   );
 }
